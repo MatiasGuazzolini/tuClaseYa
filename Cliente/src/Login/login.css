@@ -1,0 +1,186 @@
+
+
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../Img/fondoLog.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    
+    /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,123,174,1) 100%, rgba(35,37,37,1) 100%); */
+    /* background:linear-gradient(rgb(166, 159, 255), rgb(214, 214, 214));  */
+    /*background:linear-gradient(rgb(83,104,120), rgb(214, 214, 214));*/
+  }
+  
+
+  .loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28em;
+    height: 50vh;
+    /*height: 85vh;*/
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 25px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+  }
+  .input-container input{
+    height: 1.5em;
+    width: 15em;
+    border-radius: 15px;
+    border-width: 15px;
+    border:white;
+    box-shadow: 0 0 6px #0071c5;
+    /* box-shadow: 0 0 6px rgb(166, 159, 255); */
+    
+    /* box-shadow: 0 0 6px rgb(166, 159, 255); */
+    outline: none;
+    padding:10px;
+    font-size: 20px;
+  }
+  input:focus{   
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 16px #1F305E;
+    outline: 0 none;
+  }
+  a{
+    display: flex;
+    color: rgb(0, 68, 255);
+    font-weight: 500;
+    margin-right: 20;
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: baseline;
+    margin-left: 40px;
+  }
+
+  .links{
+
+    display: flex;
+    margin-right: 20px; /* Agrega un margen para separar los enlaces */
+    text-decoration: none;
+    color: #333;
+
+  }
+
+  .loginBut {
+    height: 4em;
+    width: 20em;
+    margin: 10px;
+    margin-top: 25px;
+    border-radius: 15px;
+    background:linear-gradient(#00a2bb, #009c8c);
+    border: none;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginBut:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgb(199, 199, 199);
+  }
+  .loginBut p{
+    color:white;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 15px;
+    
+  }
+  .siG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:18px;
+    height: 4em;
+    width: 24em;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(152, 145, 255);
+    border-width: 3px;
+    border-style: dashed;
+    transition: all .2s ease-in-out;
+  }
+  .siG:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgb(199, 199, 199);
+    cursor: pointer;
+  }
+  .siG p{
+    font-size: 20px;
+  }
+
+  #rq{
+    color: red;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .loginContainer {
+      width: 80%;
+      height: auto;
+      padding: 20px;
+    }
+    .loginBut, .siG {
+      width: 90%;
+    }
+    .input-container input {
+      width: 90%;
+    }
+    .links {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    a {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .regist-form {
+      padding: 20px; /* Espacio alrededor del formulario en pantallas pequeñas */
+      
+    }
+
+  }
+
+  .my-custom-modal {
+    max-width: 100%;
+  }
+  
+  /* Estilo para celulares */
+  @media only screen and (max-width: 480px) {
+    .loginContainer {
+      width: 90%;
+    }
+    .loginBut, .siG {
+      width: 100%;
+    }
+    .input-container input {
+      width: 100%;
+    }
+    .links {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    a {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
